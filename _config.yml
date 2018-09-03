@@ -27,7 +27,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - gems: [jekyll_reading_time]
+  - jekyll_reading_time
 
 reading_time:
   words_per_minute: 180
