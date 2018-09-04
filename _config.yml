@@ -30,6 +30,8 @@ plugins:
 
 google_analytics: UA-125186360-1
 
+permalink: /blog/:title/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
