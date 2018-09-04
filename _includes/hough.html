@@ -76,8 +76,34 @@
         .attr("transform", "translate(" + (padding + scale_padding) + ",0)")
         .call(yAxis2);
 
-
-
+    svg.append("text")
+        .attr("text-anchor", "end")
+        .attr("x", xScale(9.5))
+        .attr("y", yScale(0.5))
+        //.attr("font-style", "italic")
+        .attr("font-size", "10pt")
+        .text("x");
+    svg.append("text")
+        .attr("text-anchor", "start")
+        .attr("x", xScale(0.5))
+        .attr("y", yScale(9))
+        //.attr("font-style", "italic")
+        .attr("font-size", "10pt")
+        .text("y");
+    svg2.append("text")
+        .attr("text-anchor", "end")
+        .attr("x", xScale2(350))
+        .attr("y", yScale2(0.5))
+        //.attr("font-style", "italic")
+        .attr("font-size", "10pt")
+        .text("Θ")
+    svg2.append("text")
+        .attr("text-anchor", "start")
+        .attr("x", xScale2(10))
+        .attr("y", yScale2(9))
+        //.attr("font-style", "italic")
+        .attr("font-size", "10pt")
+        .text("d");
 
     // points in first graph
 
