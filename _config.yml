@@ -27,14 +27,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll_reading_time
-
-reading_time:
-  words_per_minute: 180
-  translations:
-    about:
-    minute: min read
-    minutes: min read
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
