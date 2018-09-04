@@ -130,13 +130,13 @@ time {
 }
 
 
-svg {
+.hough-svg {
   display: inline-block;
   max-width: 49%;
   margin: 0 auto;
 }
 @include media-query($on-palm) {
-  svg{
+  .hough-svg {
     display: block;
     max-width: 80%;
   }
