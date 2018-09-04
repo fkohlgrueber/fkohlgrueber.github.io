@@ -123,6 +123,16 @@ a {
     }
   }
 }
+// no text decoration for links that only display an icon
+a.icon-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+// use darker color when hovering icons
+a:hover span svg path {
+  fill: #000;
+}
 
 
 /**
