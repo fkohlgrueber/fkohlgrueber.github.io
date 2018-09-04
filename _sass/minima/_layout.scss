@@ -128,3 +128,16 @@
 time {
   font-style: italic;
 }
+
+
+svg {
+  display: inline-block;
+  max-width: 49%;
+  margin: 0 auto;
+}
+@include media-query($on-palm) {
+  svg{
+    display: block;
+    max-width: 80%;
+  }
+}
