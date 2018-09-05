@@ -6,12 +6,16 @@ categories: jekyll test
 ---
 Yep, I'm up and running!
 
-{% highlight python %}
+```python
 def do_something(name, b=2)
+    """
+    This is a multiline comment that
+    spans multiple lines, yey!
+    """
     return f"the name equals '{name}'"
 
 if __name__ == "__main__":
     print(do_something("hello"))
-{% endhighlight %}
+```
 
 {% include hough.html %}
