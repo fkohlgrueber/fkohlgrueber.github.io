@@ -18,4 +18,17 @@ if __name__ == "__main__":
     print(do_something("hello"))
 ```
 
+```python
+class MessageQueueService(object):
+
+    def log(self, message, queue, host, direction=MessageQueueLog.RECEIVED):
+        message_log = MessageQueueLog.objects.create(
+                queue=queue,
+                host=host,
+                message=message,
+                direction=direction
+            )
+        return message_log
+```
+
 {% include hough.html %}
