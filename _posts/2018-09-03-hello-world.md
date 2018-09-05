@@ -31,4 +31,20 @@ class MessageQueueService(object):
         return message_log
 ```
 
+```python
+#!/usr/bin/python3
+
+from engine import RunForrestRun
+
+"""Test code for syntax highlighting!"""
+
+class Foo:
+	def __init__(self, var):
+		self.var = var
+		self.run()
+
+	def run(self):
+		RunForrestRun()  # run along!
+```
+
 {% include hough.html %}
