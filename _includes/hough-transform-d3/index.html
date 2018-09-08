@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+      .hough-svg {
+        cursor: crosshair;
+        max-width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="root" align="center">
+      <svg id="svg1" viewBox="0 0 300 300"
+        preserveAspectRatio="xMidYMid meet"
+        class="hough-svg"
+      ></svg>
+      <svg id="svg2" viewBox="0 0 300 300"
+        preserveAspectRatio="xMidYMid meet"
+        class="hough-svg"
+      ></svg>
+    </div>
+
+    <div class="root" align="center" style="">
+      <svg id="svg3" viewBox="0 0 300 300"
+        preserveAspectRatio="xMidYMid meet"
+        class="hough-svg"
+      ></svg>
+      <div style="display: inline-block">
+      <svg id="svg4" viewBox="0 0 300 300"
+        preserveAspectRatio="xMidYMid meet"
+        class="hough-svg"
+        style="position: absolute;"
+      ></svg>
+      <canvas id="mycanvas">
+      </canvas>
+      <div>
+    </div>
+
+    <script src="/hough-transform-d3/hough.js"></script>
+    <script src="/hough-transform-d3/hough_picture.js"></script>
+  </body>
+</html>
