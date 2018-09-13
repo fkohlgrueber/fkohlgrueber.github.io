@@ -3,6 +3,8 @@ layout: post
 title:  "Hello World!"
 date:   2018-09-03 20:58:56 +0200
 categories: jekyll test
+customjs:
+- static/js/manifest.2ae2e69a05c33dfc65f8.js
 ---
 Yep, I'm up and running!
 
@@ -87,4 +89,21 @@ if __name__ == "__main__":
 
 
 
+
 {% include hough.html %}
+
+```python
+this_variable_equals = [
+    name,
+    "some string",
+    [123412341243, 3.141592653589793238462, -5.4321e10]
+]
+```
+
+<head>
+  <link href="/code-viewer/static/css/app.2657c6bad78516b5c444821a9bce0553.css" rel="stylesheet">
+</head>
+<div id="app"></div>
+<script type="text/javascript" src="/code-viewer/static/js/manifest.2ae2e69a05c33dfc65f8.js"></script>
+<script type="text/javascript" src="/code-viewer/static/js/vendor.b8580e1294724b76ff58.js"></script>
+<script type="text/javascript" src="/code-viewer/static/js/app.18f374775a69b2498002.js"></script>
