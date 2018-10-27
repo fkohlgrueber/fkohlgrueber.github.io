@@ -65,3 +65,6 @@ suggest lines formed by the edge pixels. Hover them to see which line in the ima
   insert_hough_plots("svg1", "svg2")
   insert_hough_plots_2("svg3", "svg4")
 </script>
+
+
+Code is available on [Github](https://github.com/fkohlgrueber/hough-transform-d3)
