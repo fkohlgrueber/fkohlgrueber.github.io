@@ -59,12 +59,12 @@ Um die Mehrkosten auszugleichen, müssen die Gesamteinnahmen durch die Luftverke
 
 Die folgende Tabelle zeigt die enstehenden Mehrkosten pro Flugticket für beide Szenarien:
 
-| Distanzklasse              |     2019 | Szenario 1 | Differenz | Szenario 2 | Differenz |
-|---------------------------:|---------:|-----------:|----------:|-----------:|----------:|
-|                         0¹ |   1,49 € |     2,13 € |    **0,64 €** |     1,49 € |    **0,00 €** | 
-|                          1 |   7,46 € |    10,66 € |    **3,20 €** |    13,93 € |    **6,47 €** |
-|                          2 |  23,31 € |    33,31 € |   **10,00 €** |    23,31 € |    **0,00 €** |
-|                          3 |  41,97 € |    59,97 € |   **18,00 €** |    41,97 € |    **0,00 €** |
+| Distanzklasse              | Aktuell (2019) | Szenario 1 | Differenz | Szenario 2 | Differenz |
+|---------------------------:|---------------:|-----------:|----------:|-----------:|----------:|
+|                         0¹ |         1,49 € |     2,13 € |    **0,64 €** |     1,49 € |    **0,00 €** | 
+|                          1 |         7,46 € |    10,66 € |    **3,20 €** |    13,93 € |    **6,47 €** |
+|                          2 |        23,31 € |    33,31 € |   **10,00 €** |    23,31 € |    **0,00 €** |
+|                          3 |        41,97 € |    59,97 € |   **18,00 €** |    41,97 € |    **0,00 €** |
 
 
 Die Berechnungen zeigen, dass sich die im Klimapaket vereinbarten Maßnahmen nur geringfügig auf Preise von Flugtickets auswirken werden. Werden die Mehrkosten gleichmäßig auf verschiedene Distanzklassen aufgeteilt (Szenario 1), wird ein innereuropäischer Flug um gerade einmal 3,20 € teurer und ein Interkontinentalflug (z.B. in die USA oder nach China) verteuert sich um 18 €. Selbst wenn die gesamten Mehrkosten von "Kurzstrecken"-Flügen getragen würden (Szenario 2), würde das Tickets nur um 6,47 € verteuern. Ich kann mir nicht vorstellen, dass diese Preiserhöhungen tatsächlich einen Anreiz schaffen, ökologischer zu reisen. 
