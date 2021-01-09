@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Safe Data Storage for the Masses: Part 1"
+title:  "Data Storage for Humans - Part 1: Existing Solutions"
 date:   2021-01-09 15:19:56 +0200
 categories: data storage cloud synchronization backup safety security idea 
 ---
@@ -31,9 +31,9 @@ The second problem I see is deletion of data. Nothing's stopping you from accide
 
 The third option is to buy a NAS, which basically is a large hard drive connected to your network. The advantage compared to cloud storage is that the data is kept on your device and therefore under your control. Modern NAS systems have a lot of features and allow file synchronization across your devices, automated backup and file replication, etc.
 
-I'm using a NAS myself, but I cannot recommend this approach to my non-technical friends and family. Once you operate such a device, you need to constantly invest time to keep it secure (e.g. apply security updates). If you want "advanced" features like being able to access your NAS from the internet, you need to be very carful not to expose your data to literally everyone. Network protocols, port forwarding and knowing what is safe to do is beyond the regular computer user and even experts can easily make configuration mistakes.
+I'm using a NAS myself, but I cannot recommend this approach to my non-technical friends and family. Once you operate such a device, you need to constantly invest time to keep it secure (e.g. apply security updates). If you want "advanced" features like being able to access your NAS from the internet, you need to be very careful not to expose your data to literally everyone. Network protocols, port forwarding and knowing what is safe to do is beyond the regular computer user and even experts can easily make configuration mistakes.
 
-Also, if you don't introduce some kind of data backup, your data might still be vunerable to ransomware attacks. A RAID system is not a backup solution!
+Also, if you don't introduce some kind of data backup, your data might still be vulnerable to ransomware attacks. A RAID system is not a backup solution!
 
 # Requirements
 
@@ -41,7 +41,7 @@ After looking at these different options and their disadvantages, this is the li
 
 - **Data safety**: Data should be kept. Hardware failure should not lead to data loss. Permanent deletion of data should only possible when it's *very* clear that this is the user's intention. The default should be to never permanently delete data.
 - **Data security**: The user's data should only be accessible to them and people they've shared it with. 
-- **Universal access to data**: The user's data should always be available to them. You can't access all of your 4TB personal data folder on your smartphone when you're not connected to other devices of course, but data should be availalbe as long as that's technically possible.
+- **Universal access to data**: The user's data should always be available to them. You can't access all of your 4TB personal data folder on your smartphone when you're not connected to other devices of course, but data should be available as long as that's technically possible.
 - **Minimal setup effort**: Setup and configuration effort should be as low as possible. It shouldn't require more than logging into an account or pairing two devices.
 - **Minimal maintenance effort**: I initially wanted to write no maintenance effort, but that's simply not possible. Even when using the all-in-one iCloud solution, you still have to accept condition and pricing updates. Nevertheless, the maintenance effort for a user should be as low as possible. Most importantly, there shouldn't be active maintenance required. Getting notified that the hard drive in your NAS needs to be changed is much better than having to actively check once a month.
 
