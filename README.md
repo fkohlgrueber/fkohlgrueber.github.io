@@ -4,7 +4,7 @@ This is my personal blog.
 
 ---
 
-Just because I keep forgetting how to use jekyll locally:
+Just because I keep forgetting how to use jekyll locally... This is the way:
 
 ```
 bundle exec jekyll serve
