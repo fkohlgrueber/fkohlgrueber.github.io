@@ -50,3 +50,5 @@ This list is most likely not exhaustive, feel free to tell me additional require
 ## Summary
 
 In this post, I described the options I currently see for "regular" people. There's no solution I really like and that I could recommend to everyone. I don't think that it's impossible to have such a solution though. I'm pretty sure it's possible, and probably even much easier than any of the state of the art solutions. I've been thinking a lot about data storage, synchronization and backup lately and believe that great solutions are possible if we do it right. I'll explain my ideas in another post, hopefully soon. For now, here's a short sneak peek of keywords that will be relevant: distributed, p2p, offline-first, hash-based, awesome ;-).
+
+*Edit: [Part 2]({% post_url 2021-01-16-data-storage-part-2 %}) is now available!*
