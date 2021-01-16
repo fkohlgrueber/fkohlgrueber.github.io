@@ -71,4 +71,4 @@ There's much more to think and write about. One large topic would be data organi
 
 I'm not sure what I'll be doing next, but, *hey!*, it's my spare time project and I'm free to do whatever I want whenever I want to. Let's see where this goes. 
 
-If you have feedback, questions or additional information I should look at, feel free to contact me directly, on twitter or join the [discussion](https://futureofcoding.slack.com/) in the [future of coding community](https://futureofcoding.org/). Till' next time!
+If you have feedback, questions or additional information I should look at, feel free to contact me directly, on twitter or join the [discussion](https://futureofcoding.slack.com/archives/C5T9GPWFL/p1610799148017200) in the [future of coding community](https://futureofcoding.org/). Till' next time!
