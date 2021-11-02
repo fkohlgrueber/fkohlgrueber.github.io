@@ -1,13 +1,15 @@
 ---
 layout: post
 title:  "The Tree Structure of File Systems"
-date:   2021-11-01 12:55:00 +0200
+date:   2021-11-02 19:55:00 +0200
 categories: rust file system tree structure folder directory 
 ---
 
-I've been using file system for a long time and have always thought of them as tree data structures. A couple of days ago, I had a realization that seem obvious in retrospect, but didn't occur to me all those years before: The file system tree is different from what I'd usually implement as a tree structure.
+I've been using file system for a long time and have always thought of them as tree data structures. A couple of days ago, I had a realization that seems obvious in retrospect, but didn't occur to me all those years before: The file system tree is different from what I'd usually implement as a tree structure.
 
 If you'd ask me to implement a tree data structure, I'd probably write something like this:
+
+*(I'm using Rust throughout this post, but you should be able to follow along without prior knowledge of Rust.)*
 
 ```rust
 struct SimpleTreeNode<T> {
@@ -51,7 +53,7 @@ The fact that inner nodes in a file system hierarchy cannot hold data is limitin
 
 *Giving a full explanation of how modules work in Rust would be beyond the scope of this text. If you want to learn more about them, I can recommend the official [Rust book](https://doc.rust-lang.org/stable/book/). [Chapter 7](https://doc.rust-lang.org/stable/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html) explains [what modules are](https://doc.rust-lang.org/stable/book/ch07-02-defining-modules-to-control-scope-and-privacy.html) and [how they can be separated into different files](https://doc.rust-lang.org/stable/book/ch07-05-separating-modules-into-different-files.html).*
 
-In Rust, the root of your crate is usually `src/lib.rs` (for libraries) or `src/main.rs` (for binaries). Within this root file, you can create modules using `mod` blocks. Modules can be nested and their definition can either be inline or in separate files. When using separate files, there's rules for naming them. 
+In Rust, the root of your [crate](https://doc.rust-lang.org/stable/book/ch07-01-packages-and-crates.html#packages-and-crates) is usually `src/lib.rs` (for libraries) or `src/main.rs` (for binaries). Within this root file, you can create modules using `mod` blocks. Modules can be nested and their definition can either be inline or in separate files. When using separate files, there's rules for naming them.
 
 Let's say we have the following hierarchy of modules, implemented as inline modules in the root file:
 
@@ -140,7 +142,17 @@ blog/
   about.html
 ```
 
-That's very similar to the Rust example, except that the "special directory file" is named `index.html` instead of `mod.rs`. Again, how about this structure:
+The website consists of several html files in nested folders. Serving the `blog` folder using a simple HTTP Server allows it to be viewed using a web browser. For example, if the server is running locally on port 8000, pointing a browser to `http://localhost:8000/blog/about.html` would display the content of the `about.html` file. Similarly, using `http://localhost:8000/blog/posts/hello-world.html` would show the respective hello world file. So far so good.
+
+But what happens when we're pointing the browser to a folder instead of a file (e.g. `http://localhost:8000/blog/posts`)? As always, [Wikipedia has the answer](https://en.wikipedia.org/wiki/Webserver_directory_index):
+
+> When an HTTP client (generally a web browser) requests a URL that points to a directory structure instead of an actual web page within the directory structure, the web server will generally serve a default page, which is often referred to as a main or "index" page.
+>
+> A common filename for such a page is `index.html`, but most modern HTTP servers offer a configurable list of filenames that the server can use as an index.
+
+In our case, requesting `http://localhost:8000/blog/posts` will show the `index.html` file in the `posts` folder. The `index.html` file contains the data that logically belongs to its parent folder (`posts` in this case).
+
+That's very similar to the Rust example, except that the "special directory file" is named `index.html` instead of `mod.rs`. And just like in the Rust example, we could simplify the structure when allowing files that can have both data and children:
 
 ```
 blog.html
@@ -150,7 +162,9 @@ blog.html
   about.html
 ```
 
-Again, we reduced the number of file system elements and got rid of the "special directory files".
+In this example, the data that has been stored in `blog/index.html` and `blog/posts/index.html` respectively is now directly stored in the parent nodes (which I've called `blog.html` and `blog.html/posts.html` respectively).
+
+Again, this change reduced the number of file system elements and there's no more need for the "special directory files". Looking at the quote above, it would probably also remove a configuration option from http servers. The data that should be served for a directory would be clear: it's the data stored within the directory's node.
 
 ## Saving a Web Page
 
