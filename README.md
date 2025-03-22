@@ -1,4 +1,11 @@
-# Felix's Blog
+# ⚠️⚠️⚠️ Archived as of 2025-03-22
+
+This repo and blog have been archived and will not be maintained anymore. Feel free to check out the new blog:
+
+**[https://felixwrt.dev/](https://felixwrt.dev/)**
+
+
+## Felix's Blog
 
 This is my personal blog.
 
